@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE person SYSTEM "person.dtd">
+
+
+<person>
+    <name>Joe Bloggs</name> 
+    <age>37</age>
+    <gender>male</gender>
+    <address>Athlone</address>
+    <dob>30/05/1972</dob>
+    <nationality>Irish</nationality>
+</person>

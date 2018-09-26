@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE laptop SYSTEM "laptop.dtd">
+
+
+<laptop>
+    <manufacturer country= "Poland"  continent = "Europe">Dell</manufacturer>
+    <model>Inspiron</model>
+    <memory>512M</memory>
+    <disk>60G</disk>
+    <screen>15 inch</screen>
+    <accessories>Bag</accessories>
+    <accessories>Mouse</accessories>
+    
+</laptop>

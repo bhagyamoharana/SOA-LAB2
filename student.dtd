@@ -1,0 +1,13 @@
+<!ELEMENT student (idnumber, college, course, year, subjects )>
+<!ELEMENT  idnumber (#PCDATA)> <!--text-->
+<!ELEMENT  college (#PCDATA)> <!--text-->
+<!ELEMENT  dob (#PCDATA)>
+<!ELEMENT  course (#PCDATA)>
+<!ELEMENT  subjects (subject+)>  <!--children-->
+<!ELEMENT  subject (#PCDATA)>
+<!ELEMENT  year EMPTY>    <!--without brackets-->
+<!ATTLIST college shortname CDATA #FIXED "AIT"> <!--fixed is another way of saying required-->
+<!ATTLIST year value (1|2|3|4|5) #IMPLIED>
+
+<!--#IMPLIED IS used if you dont want to force the xml author to include an attribute but dont have a default value either-->
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student SYSTEM "student.dtd">
+
+
+
+<student>
+    <idnumber>A00258759</idnumber>
+    <college shortname = "AIT">Athlone Institue of Technology</college>
+    
+    <course>MSC In Software Engg</course>
+    <year value = "5" />
+   
+    <subjects>
+        <subject>SOA</subject>
+        <subject>Telecoms</subject>
+        <subject>SW Development</subject>
+    </subjects>
+    
+    
+    
+</student>

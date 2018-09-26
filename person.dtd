@@ -1,0 +1,8 @@
+
+<!ELEMENT person (name ,age,gender, address, dob, nationality)>
+<!ELEMENT  name (#PCDATA)> <!--text-->
+<!ELEMENT  age (#PCDATA)>
+<!ELEMENT  gender (#PCDATA)>
+<!ELEMENT  address (#PCDATA)>
+<!ELEMENT  dob (#PCDATA)>
+<!ELEMENT  nationality (#PCDATA)>
