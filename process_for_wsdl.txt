@@ -1,0 +1,90 @@
+projects _ new project_javaweb_java web application-name and finish
+
+
+package soap.hardcoded;
+
+import javax.jws.WebService;
+import javax.jws.WebMethod;
+import javax.jws.WebParam;
+
+@WebService(serviceName = "PartsWS")
+public class PartsWS {
+
+    @WebMethod(operationName = "hello")
+    public String hello(@WebParam(name = "name") String txt) {
+        return "Hello " + txt + " !";
+    }
+
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "getAllParts")
+    public String getAllParts() {
+       StringBuffer buffer = new StringBuffer();
+       buffer.append("<parts>\n");
+       buffer.append("<part>123</part>\n");
+       buffer.append("<part>456</part>\n");
+       buffer.append("<part>789</part>\n");
+       buffer.append("<parts>\n");
+       return buffer.toString();
+       
+    }
+}
+
+
+
+
+run the application and store this window path , copy from schema location
+
+http://localhost:8080/SOA5_2018/PartsWS?wsdl
+
+create a new project _ java_java application _ right click on it _new web service client_ wsdl_ put the path _ finish it 
+
+go and edit and put method of partsws as shown
+
+
+package soa5_client_2018;
+
+public class SOA5_Client_2018 {
+
+    
+    public static void main(String[] args) {
+        System.out.println(getAllParts());
+    }
+
+    private static String getAllParts() {
+        soap.hardcoded.PartsWS_Service service = new soap.hardcoded.PartsWS_Service();
+        soap.hardcoded.PartsWS port = service.getPartsWSPort();
+        return port.getAllParts();
+    }
+    
+}
+
+
+ in client _web service reference _ right click_refresh
+
+now in client.java, INSERT CODE, CALL WEB SERVICE operation
+copy 
+the method
+private static String deleteAllParts() {
+        soap.hardcoded.PartsWS_Service service = new soap.hardcoded.PartsWS_Service();
+        soap.hardcoded.PartsWS port = service.getPartsWSPort();
+        return port.deleteAllParts();
+
+and then syso it in main method
+
+and then run it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
